@@ -103,7 +103,7 @@ responses:
   
   utter_help:
   - text: |
-      I am able to help regarding queries on CCPA IIRD
+      I am able to help regarding queries on CCPA, IIRD, secureIT, DLP
       
   utter_welcome:
   - text: You're welcome!
@@ -192,7 +192,7 @@ responses:
   - text: "Glad to hear that, Do you have anything to ask?"
   
   utter_default_answer:
-  - text: "Please visit go/sdm for more information"
+  - text: "Please visit go/sdmopsrequest to raise a request for more information"
   
   utter_ask:
   - text: "Tell me, How can I help?"

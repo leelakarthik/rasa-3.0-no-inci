@@ -52,10 +52,6 @@ stories:
   steps:
   - intent: goodbye
   - action: utter_goodbye
-- story: bot challenge
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
 - story: confidential part with greeting
   steps:
   - intent: mood_great
