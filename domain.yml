@@ -103,9 +103,7 @@ responses:
   
   utter_help:
   - text: |
-      I can help you open a service request ticket.
-      You can ask me things like 'Open an incident', 'Help me reset my password', or 
-      I'm having a issue with my email.
+      I am able to help regarding queries on CCPA IIRD
       
   utter_welcome:
   - text: You're welcome!

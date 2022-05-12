@@ -20,31 +20,10 @@ stories:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
-# - story: incident form
-#   steps:
-#   - or:
-#     - intent: open_incident
-#     - intent: password_reset
-#     - intent: problem_email
-#   - action: open_incident_form
-#   - active_loop: open_incident_form
-#   - active_loop: null
 - story: password reset
   steps:
   - intent: password_reset
   - action: utter_pass_help
-# - story: incident form interrupted
-#   steps:
-#   - or:
-#     - intent: open_incident
-#     - intent: password_reset
-#     - intent: problem_email
-#   - action: open_incident_form
-#   - active_loop: open_incident_form
-#   - intent: out_of_scope
-#   - action: utter_out_of_scope
-#   - action: open_incident_form
-#   - active_loop: null
 - story: happy path
   steps:
   - intent: greet
@@ -135,15 +114,13 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_myjob
-# - story: DLP part without greeting no
-#   steps:
-#   - intent: ask_dlp
-#   - action: utter_dlp
-#   - action: utter_did_that_help
-#   - intent: deny
-#   - action: further_help_form
-#   - active_loop: further_help_form
-#   - active_loop: null
+- story: DLP part without greeting no
+  steps:
+  - intent: ask_dlp
+  - action: utter_dlp
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_default
 - story: Secure Upload part with greeting
   steps:
   - intent: mood_great
@@ -158,15 +135,13 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_myjob
-# - story: Secure Upload without greeting no
-#   steps:
-#   - intent: ask_secure_upload
-#   - action: utter_secure_upload
-#   - action: utter_did_that_help
-#   - intent: deny
-#   - action: further_help_form
-#   - active_loop: further_help_form
-#   - active_loop: null
+- story: Secure Upload without greeting no
+  steps:
+  - intent: ask_secure_upload
+  - action: utter_secure_upload
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_default
 - story: IIRD part with greeting
   steps:
   - intent: mood_great
@@ -181,15 +156,14 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_myjob
-# - story: IIRD without greeting no
-#   steps:
-#   - intent: ask_IIRD
-#   - action: utter_IIRD
-#   - action: utter_did_that_help
-#   - intent: deny
-#   - action: further_help_form
-#   - active_loop: further_help_form
-#   - active_loop: null
+- story: IIRD without greeting no
+  steps:
+  - intent: ask_IIRD
+  - action: utter_IIRD
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_default
+
 - story: Succesful Story
   steps:
   - intent: thanks
@@ -216,15 +190,13 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_myjob
-# - story: Diff Between CCPA and GDPR without greeting no
-#   steps:
-#   - intent: ask_diff_ccpa_gdpr
-#   - action: utter_diff_ccpa_gdpr
-#   - action: utter_did_that_help
-#   - intent: deny
-#   - action: further_help_form
-#   - active_loop: further_help_form
-#   - active_loop: null
+- story: Diff Between CCPA and GDPR without greeting no
+  steps:
+  - intent: ask_diff_ccpa_gdpr
+  - action: utter_diff_ccpa_gdpr
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_default
 - story: CCPA Applicable part with greeting
   steps:
   - intent: mood_great
@@ -239,15 +211,13 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_myjob
-# - story: CCPA Applicable without greeting no
-#   steps:
-#   - intent: ask_ccpa_applicable
-#   - action: utter_ccpa_applicable
-#   - action: utter_did_that_help
-#   - intent: deny
-#   - action: further_help_form
-#   - active_loop: further_help_form
-#   - active_loop: null
+- story: CCPA Applicable without greeting no
+  steps:
+  - intent: ask_ccpa_applicable
+  - action: utter_ccpa_applicable
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_default
 - story: CCPA Timeline part with greeting
   steps:
   - intent: mood_great
@@ -262,23 +232,14 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_myjob
-# - story: CCPA Timeline without greeting no
-#   steps:
-#   - intent: ask_timeline_ccpa
-#   - action: utter_timeline_ccpa
-#   - action: utter_did_that_help
-#   - intent: deny
-#   - action: further_help_form
-#   - active_loop: further_help_form
-#   - active_loop: null
-# - story: A sample path
-#   steps:
-#   - intent: ask_more_help
-#   - action: further_help_form
-#   - active_loop: further_help_form
-#   - active_loop: null
-#   - intent: affirm
-#   - action: utter_goodbye
+- story: CCPA Timeline without greeting no
+  steps:
+  - intent: ask_timeline_ccpa
+  - action: utter_timeline_ccpa
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_default
+
 - story: Ask information about PCI
   steps:
   - intent: ask_pci
@@ -293,39 +254,6 @@ stories:
   - action: utter_ask
   - intent: ask_pci
   - action: utter_pci
-# - story: explain name
-#   steps:
-#   - intent: ask_more_help
-#   - action: further_help_form
-#   - active_loop: further_help_form
-#   - slot_was_set:
-#     - requested_slot: name
-#   - intent: explain
-#   - action: utter_explain_why_name
-#   - action: further_help_form
-#   - active_loop: null
-# - story: explain id
-#   steps:
-#   - intent: ask_more_help
-#   - action: further_help_form
-#   - active_loop: further_help_form
-#   - slot_was_set:
-#     - requested_slot: id
-#   - intent: explain
-#   - action: utter_explain_why_id
-#   - action: further_help_form
-#   - active_loop: null
-# - story: explain problem
-#   steps:
-#   - intent: ask_more_help
-#   - action: further_help_form
-#   - active_loop: further_help_form
-#   - slot_was_set:
-#     - requested_slot: problem
-#   - intent: explain
-#   - action: utter_explain_why_problem
-#   - action: further_help_form
-#   - active_loop: null
 - story: email problem
   steps:
   - intent: problem_email
