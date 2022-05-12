@@ -10,7 +10,7 @@ stories:
   - action: utter_help
 - story: thank
   steps:
-  - intent: thank
+  - intent: thanks
   - action: utter_welcome
 - story: say goodbye
   steps:
@@ -29,7 +29,10 @@ stories:
 #   - action: open_incident_form
 #   - active_loop: open_incident_form
 #   - active_loop: null
-
+- story: password reset
+  steps:
+  - intent: password_reset
+  - action: utter_pass_help
 # - story: incident form interrupted
 #   steps:
 #   - or:
@@ -123,6 +126,8 @@ stories:
   - action: utter_ask
   - intent: ask_dlp
   - action: utter_dlp
+  - intent: deny
+  - action: utter_default
 - story: DLP without greeting
   steps:
   - intent: ask_dlp
@@ -188,7 +193,7 @@ stories:
 - story: Succesful Story
   steps:
   - intent: thanks
-  - action: utter_happy
+  - action: utter_welcome
 - story: Ask information about CCPA
   steps:
   - intent: ask_ccpa
@@ -321,6 +326,12 @@ stories:
 #   - action: utter_explain_why_problem
 #   - action: further_help_form
 #   - active_loop: null
+- story: email problem
+  steps:
+  - intent: problem_email
+  - action: utter_what_is_email
+  - intent: inform
+  - action: utter_out_of_scope
 - story: market share example
   steps:
   - intent: ask_marketshare

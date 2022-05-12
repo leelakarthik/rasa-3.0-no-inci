@@ -165,13 +165,13 @@ nlu:
       - I am [sai]{"entity": "name"}
       - You can call me [pavan]{"entity": "name"}
       - [surya]{"entity": "name"}
-  - intent: show_image
-    examples: |
-      - show me an [image]{"entity": "media"}
-      - I need to see a [image]{"entity": "media"}
-      - can you show me an [image]{"entity": "media"}
-      - [image]{"entity": "media"}
-      - [image]{"entity": "media"} demo
+  # - intent: show_image
+  #   examples: |
+  #     - show me an [image]{"entity": "media"}
+  #     - I need to see a [image]{"entity": "media"}
+  #     - can you show me an [image]{"entity": "media"}
+  #     - [image]{"entity": "media"}
+  #     - [image]{"entity": "media"} demo
   - intent: help
     examples: |
       - I need help
@@ -262,14 +262,14 @@ nlu:
       - when will CCPA starts operation?
       - from when the enforcement actions of ccpa take place?
       - is ccpa act in opearion?
-  - intent: ask_more_help
-    examples: |
-      - I need more help
-      - My query not solved
-      - I need an associate help
-      - I want to an associate help
-      - I need to raise a request
-      - I hate Chatbots.
+  # - intent: ask_more_help
+  #   examples: |
+  #     - I need more help
+  #     - My query not solved
+  #     - I need an associate help
+  #     - I want to an associate help
+  #     - I need to raise a request
+  #     - I hate Chatbots.
   - intent: ask_pci
     examples: |
       - what is [pci]{"entity": "wiki"}
@@ -281,13 +281,13 @@ nlu:
       - What is pci?
       - I need information regarding pci
       - pci
-  - intent: explain
-    examples: |
-      - why
-      - why is that
-      - why do you need it
-      - why do you need to know that?
-      - could you explain why you need it?
+  # - intent: explain
+  #   examples: |
+  #     - why
+  #     - why is that
+  #     - why do you need it
+  #     - why do you need to know that?
+  #     - could you explain why you need it?
   - intent: ask_marketshare
     examples: |
       - what is the market share of it companies
