@@ -72,7 +72,6 @@ actions:
   - utter_happy
   - utter_iamabot
   - utter_goodbye
-  - utter_confidential
   - utter_default_answer
   - utter_myjob
   - utter_ask
