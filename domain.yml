@@ -191,10 +191,8 @@ responses:
 
 
   utter_pci:
-  - text: |
-      PCI means Payment Card Industry. Check out this video for more information. 
-
-      https://youtube.com/embed/szVmMxWORBc
+  - text: "PCI means Payment Card Industry. Check out this video for more information." 
+    video: "https://youtube.com/embed/szVmMxWORBc"
 
   utter_goodbye:
   - text: "Bye"
@@ -265,9 +263,7 @@ responses:
   - text: At present, there is no mechanism of re-assigning the table ownership from one user to the other. Among the proposed solutions is the re-assigning of library ownership via "Foster parent" process however it is not currently applicable.
 
   utter_sdm_discover_sas_exception_delete_quarantined_datasets_usage:
-  - custom: 
-      payload: "code"
-      data: |
+  - text: |
         Please use the following command to delete your quarantine datasets. 
         
         %Repeat( %nrstr( %Force_Delete(ME.?) ), DS1 DS2 ...);"
@@ -275,9 +271,7 @@ responses:
         Leave the question mark ? in there. Replace DS1 DS2…. With the names of your datasets without the libname(ME) The dataset names should be separated by space(s).
     
   utter_sdm_discover_sas_exception_deleting_datasets:
-  - custom:
-      payload: "code"
-      data: |
+  - text: |
         If the dataset is not quarantined and you wish to delete the entire dataset, you can use the following command in EG.
         
         PROD SQL; 
@@ -287,9 +281,7 @@ responses:
         This will drop the entire table/dataset.
 
   utter_sdm_discover_sas_exception_identifying_owners:
-  - custom:
-      payload: "code"
-      data: |
+  - text: |
         In SAS Enterprise Guide run the following SQL statement.
 
         PROC SQL;

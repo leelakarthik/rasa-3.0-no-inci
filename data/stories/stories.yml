@@ -52,27 +52,7 @@ stories:
   steps:
   - intent: goodbye
   - action: utter_goodbye
-- story: confidential part with greeting
-  steps:
-  - intent: mood_great
-  - action: utter_happy
-  - action: utter_ask
-  - intent: ask_confidential
-  - action: utter_confidential
-- story: confidential part without greeting yes
-  steps:
-  - intent: ask_confidential
-  - action: utter_confidential
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_myjob
-- story: confidential part without greeting no
-  steps:
-  - intent: ask_confidential
-  - action: utter_confidential
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_default_answer
+
 - story: classification levels part with greeting
   steps:
   - intent: mood_great
@@ -250,12 +230,6 @@ stories:
   - action: utter_ask
   - intent: ask_pci
   - action: utter_pci
-- story: email problem
-  steps:
-  - intent: problem_email
-  - action: utter_what_is_email
-  - intent: inform
-  - action: utter_confidential
 - story: market share example
   steps:
   - intent: ask_marketshare
@@ -282,7 +256,7 @@ stories:
   - intent: check_links
   - action: utter_go_links
   - intent: goodbye
-  - action: action_end_conversation
+  - action: utter_goodbye
 
 - story: links check
   steps:

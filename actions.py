@@ -41,7 +41,7 @@ class ActionShowTemplate(Action):
     def run(self, dispatcher, tracker, domain):
         
         template = next(tracker.get_latest_entity_values("media"), None)
-        if template is not None and template.lower() in ['image','pdf']:
+        if template is not None and template.lower() in ['image','pdf','video']:
             dispatcher.utter_message("Sorry, I couldn't understand.")
         
         
