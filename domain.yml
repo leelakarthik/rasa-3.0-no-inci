@@ -28,6 +28,22 @@ intents:
   - company_deliveries
   - company_mitigation
   - faq_curve
+  - check_links
+  - check_dropdown
+  - drop_options
+  - data_classifications
+  - sas_form_enquire
+  - sas_days_extention
+  - sdm_discover_sas_exception_sol_storing_sd_gt180_days_sas
+  - sdm_discover_sas_exception_executive_approver
+  - sdm_discover_sas_exception_request_approver_ed
+  - sdm_discover_sas_exception_changing_ownership
+  - sdm_discover_sas_exception_delete_quarantined_datasets_usage
+  - sdm_discover_sas_exception_deleting_datasets
+  - sdm_discover_sas_exception_identifying_owners
+  - sdm_discover_sas_exception_sastoshares
+  - sdm_discover_sas_exception_vulnerabilities_with_sas
+  - sdm_discover_sas_exception_non_member_sensitive_data
 
 entities:
   - name
@@ -221,6 +237,93 @@ responses:
   - text: "The CCPA becomes operative on January 1, 2020, but the California Attorney General will not bring enforcement actions until July 1, 2020."
   
   
+  utter_go_links:
+  - text: please vist [go/connect](http://go/connect) for employee information
+  - text: "[go/snow](http://go/snow) for servicenow"
+  - text: "please vist [go/connect](http://go/connect) for employee information. You can get a video walk through at [go/sdmupdate](http://go/sdmupdate)"
+  - text: "[go/connect](http://go/connect) [go/sdmupdate](http://go/sdmupdate) please visit [test link](https://google.com) for updates"
+  - text: "you can get a video walk through at [go/sdmupdate](http://go/sdmupdate)"
+  - text: "you check for any findings at [go/eagleeye](http://go/eagleeye) and then clik on Sensitive data Management in the blue Navbar"
+
+
+  utter_sas_form_enquire:
+  - text: In order to keep sensitive data within SAS, please fill out a Sensitive Data Exception Form located at [go/sdmsnow](http://go/sdmsnow). Please choose the radial button for SAS and complete all required fields before hitting submit. Once all levels of approval are complete, we will update the DETECT Preapproval table and your tables will no longer be subject to discovery/quarantine for the timeline allowed. Attached is the risk statement and follow on instructions that should help fulfill your request.
+
+  utter_sas_days_extention:
+  - text: Based on current processes and procedures, sensitive data can only be stored within SAS for a max of 180 days due to a lack of proper controls within the SAS domain.
+
+  utter_sdm_discover_sas_exception_sol_storing_sd_gt180_days_sas:
+  - text: Any requirement to keep sensitive data after the 180 days must result in an alternate approved solution other than SAS
+
+  utter_sdm_discover_sas_exception_executive_approver:
+  - text: The Executive Sponsor is whoever the executive to the library owner is. If user is the owner, his/her executive would be the one who needs to approve
+
+  utter_sdm_discover_sas_exception_request_approver_ed:
+  - text: Approver should be Executive Director (ED) or above.
+
+  utter_sdm_discover_sas_exception_changing_ownership:
+  - text: At present, there is no mechanism of re-assigning the table ownership from one user to the other. Among the proposed solutions is the re-assigning of library ownership via "Foster parent" process however it is not currently applicable.
+
+  utter_sdm_discover_sas_exception_delete_quarantined_datasets_usage:
+  - custom: 
+      payload: "code"
+      data: |
+        Please use the following command to delete your quarantine datasets. 
+        
+        %Repeat( %nrstr( %Force_Delete(ME.?) ), DS1 DS2 ...);"
+        
+        Leave the question mark ? in there. Replace DS1 DS2…. With the names of your datasets without the libname(ME) The dataset names should be separated by space(s).
+    
+  utter_sdm_discover_sas_exception_deleting_datasets:
+  - custom:
+      payload: "code"
+      data: |
+        If the dataset is not quarantined and you wish to delete the entire dataset, you can use the following command in EG.
+        
+        PROD SQL; 
+        DROP TABLE   LibName.TableName ; 
+        QUIT;
+        
+        This will drop the entire table/dataset.
+
+  utter_sdm_discover_sas_exception_identifying_owners:
+  - custom:
+      payload: "code"
+      data: |
+        In SAS Enterprise Guide run the following SQL statement.
+
+        PROC SQL;
+
+          SELECT OFFICIAL_LIB, MEMNAME, OWNER
+          FROM SBAPUB.DATASETS
+          WHERE
+          OFFICIAL_LIB = 'The library name' 
+          AND MEMNAME   LIKE '%XXX%'     /* XXX is the dataset full name or part of the name */
+        ;
+        QUIT;
+
+        If the library name is NOT available, run the following query.
+
+        PROC SQL;
+
+          SELECT OFFICIAL_LIB, MEMNAME, OWNER
+          FROM SBAPUB.DATASETS
+          WHERE
+            MEMNAME   LIKE '%XXX%'         /* XXX is the dataset full name or part of the name */
+        ;
+        QUIT;
+
+  utter_sdm_discover_sas_exception_sastoshares:
+  - text: |
+      A shared drive should not be used to replace a SAS table but could be leveraged based off the use case and need. This would be something that would have to be discussed with your risk and compliance partners.
+
+  utter_sdm_discover_sas_exception_vulnerabilities_with_sas:
+  - text: There are several concerns around sensitive data being stored in SAS, one of them being inadequate access controls as they are not as robust as some of the other platforms within the enterprise.
+
+  utter_sdm_discover_sas_exception_non_member_sensitive_data:
+  - text: Sensitive Data is sensitive data regardless of employees or members. Of course our member data poses a higher risk when the proper controls are not implemented. We absolutely cannot make an exception for SSN , but the others are ok to move forward if every attempt has been made to not keep multiple PII elements together in the same table.
+
+
 slots:
   name:
     type: text
