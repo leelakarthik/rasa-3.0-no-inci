@@ -31,6 +31,15 @@ stories:
   - intent: mood_great
   - action: utter_happy
   - action: utter_ask
+- story: links check path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: check_links
+  - action: utter_go_links
+  - intent: goodbye
+  - action: utter_goodbye
+
 - story: sad path 1
   steps:
   - intent: greet
@@ -247,37 +256,19 @@ stories:
   - intent: faq_curve
   - action: utter_faq_curve
 
-- story: links check path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-  - intent: check_links
-  - action: utter_go_links
-  - intent: goodbye
-  - action: utter_goodbye
 
 - story: links check
   steps:
   - intent: check_links
   - action: utter_go_links
-  
-- story: dropdown check
-  steps:
-  - intent: check_dropdown
-  - action: utter_dropdown  
-- story: options check
-  steps:
-  - intent: drop_options
-  - action: utter_options
-
+  - intent: goodbye
+  - action: utter_goodbye
   
 
 - story: data classifications
   steps:
   - intent: data_classifications
-  - action: utter_data_classifications
+  - action: utter_classification_levels
 
 - story: sas_form_enquire
   steps:

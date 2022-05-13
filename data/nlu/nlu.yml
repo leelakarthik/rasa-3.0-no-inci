@@ -112,49 +112,6 @@ nlu:
       - reset my password
       - password reset
       - forgot my password and can't reset it
-  - intent: problem_email
-    examples: |
-      - my outlook application won't open
-      - I'm having issues with outlook.
-      - issues with outlook
-      - outlook application will not open
-      - there's a problem with my email
-      - something is broken with outlook
-      - I can't log in to my email
-      - can't log in to outlook
-      - my email won't let me log in
-      - i have a problem with my email
-  - intent: inform
-    examples: |
-      - my email is [test@example.com]{"entity": "email"}
-      - my email is [abraham.lincoln@example.com]{"entity": "email"}
-      - [abraham.lincoln@example.com]{"entity": "email"}
-      - it is [abraham.lincoln@example.com]{"entity": "email"}
-      - [low]{"entity": "priority","value":"low"}
-      - [medium]{"entity": "priority","value":"medium"}
-      - [high]{"entity": "priority","value":"high"}
-      - it should be a [low]{"entity": "priority"} priority
-      - it should be [medium]{"entity": "priority"}
-      - [escalated]{"entity": "priority", "value": "high"}
-      - [escalate]{"entity": "priority", "value": "high"}
-      - [super high]{"entity": "priority"}
-      - My problem is something that I cannot understand.
-      - I am facing bla bla bla issue
-      - I am facing so and so and failing
-      - I lost the access actually
-      - I am facing the issue from these many months.
-      - I am unable to understand
-      - My ID is [ply7514]{"entity": "id"}
-      - I am facing with account [it1234]{"entity": "id"}
-      - my problem is with [abc26452]{"entity": "id"}
-      - [AxC9536]{"entity": "id"}
-      - [plz7417]{"entity": "id"}
-      - [pla78945]{"entity": "id"} is my ID.
-      - Sure. My ID is [PCX2477]{"entity": "id"}.
-      - My name is [uday]{"entity": "name"}
-      - I am [sai]{"entity": "name"}
-      - You can call me [pavan]{"entity": "name"}
-      - [surya]{"entity": "name"}
 
   - intent: help
     examples: |
@@ -204,13 +161,7 @@ nlu:
       - you come to me on the day of my daughter's wedding
       - you don't win friends with salad
       - you're going to need a bigger boat
-  - intent: ask_confidential
-    examples: |
-      - why i am unable to send confidential documents?
-      - can i send confidential documents?
-      - what is the process to send confidential documents?
-      - i want to send confidential documents. how can i do that?
-      - how can i send confidential documents?
+
   - intent: ask_classification_levels
     examples: |
       - how many ways of classification?
@@ -500,19 +451,6 @@ nlu:
       - example of any go links
       - give me go links
 
-  - intent: check_dropdown
-    examples: |
-      - hey what are the options
-      - dropdown
-      - provide options
-      - example options
-      
-  - intent: drop_options
-    examples: |
-      - [option1](drop_option)
-      - [option2](drop_option)
-      - [option3](drop_option)
-      - [option4](drop_option)
     
   - intent: data_classifications
     examples: |

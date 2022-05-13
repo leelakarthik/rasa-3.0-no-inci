@@ -7,7 +7,6 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - ask_confidential
   - ask_classification_levels
   - ask_dlp
   - ask_secure_upload
@@ -21,7 +20,6 @@ intents:
   - password_reset
   - inform
   - help
-  - problem_email
   - out_of_scope
   - restart
   - ask_marketshare
@@ -29,8 +27,6 @@ intents:
   - company_mitigation
   - faq_curve
   - check_links
-  - check_dropdown
-  - drop_options
   - data_classifications
   - sas_form_enquire
   - sas_days_extention
@@ -92,7 +88,6 @@ actions:
   - utter_pci
   - utter_pass_help
   - utter_marketshare
-  - utter_what_is_email
   - utter_company_deliveries
   - utter_company_mitigation
   - utter_faq_curve
@@ -109,8 +104,7 @@ responses:
           description: Wash your hands with soap for 20 seconds regularly.
         - title: Hygience Principles
           description: Do not touch your eyes, nose and mouth with hands.
-  utter_what_is_email:
-  - text: share your email please
+
   utter_company_deliveries:
   - text: "Until Further notice, all reservations, deliveries are cancelled."
   
@@ -178,7 +172,7 @@ responses:
         - "#36a2eb"
         - "#ffcd56"
         - "#ff6384"
-        - "#009689"
+        - "#009688"
         - "#c45850"
         chartsData:
         - 50
@@ -192,7 +186,7 @@ responses:
 
   utter_pci:
   - text: "PCI means Payment Card Industry. Check out this video for more information." 
-    video: "https://youtube.com/embed/szVmMxWORBc"
+    image: "https://youtube.com/embed/szVmMxWORBc"
 
   utter_goodbye:
   - text: "Bye"
@@ -200,10 +194,6 @@ responses:
   utter_iamabot:
   - text: "I am SDM Operations bot powered with features"
   
-  utter_confidential:
-  - text: "To send confidential information, you need to have privilages of director or above."
-  - text: "If you have a role of director or above, you are free to send the confidential information"
-
   utter_myjob:
   - text: "Glad to hear that, Do you have anything to ask?"
   
