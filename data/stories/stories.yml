@@ -31,7 +31,7 @@ stories:
   - intent: mood_great
   - action: utter_happy
   - action: utter_ask
-- story: links check path
+- story: links check pa
   steps:
   - intent: greet
   - action: utter_greet
