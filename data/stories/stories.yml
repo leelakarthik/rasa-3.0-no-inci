@@ -256,6 +256,19 @@ stories:
   - intent: faq_curve
   - action: utter_faq_curve
 
+<<<<<<< HEAD
+=======
+- story: links check path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: check_links
+  - action: utter_go_links
+  - intent: goodbye
+  - action: utter_goodbye
+>>>>>>> 96da97c73713ceb032ebac6a7472bb05f2e15aa8
 
 - story: links check
   steps:
