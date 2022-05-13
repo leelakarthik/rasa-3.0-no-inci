@@ -177,7 +177,7 @@ responses:
   utter_pci:
   - text: |
       PCI means Payment Card Industry. Check out this video for more information. 
-      
+
       https://youtube.com/embed/szVmMxWORBc
 
   utter_goodbye:
@@ -206,7 +206,7 @@ responses:
   - text: "Please visit go/datasafeguard and follow Secure Upload process."  
   
   utter_IIRD:
-  - text: "Visit go/iird to see the status of active IIRD."  
+  - text: "Visit go/iird to see the status of active IIRD."
   
   utter_ccpa_info:
   - text: "The California Consumer Privacy Act (CCPA) is the most comprehensive privacy legislation in the United States. Like the General Data Protection Regulation (GDPR), it requires companies to take certain steps to protect personal information and make available personal information rights to individuals."
