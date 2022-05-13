@@ -255,7 +255,7 @@ stories:
   - intent: problem_email
   - action: utter_what_is_email
   - intent: inform
-  - action: utter_out_of_scope
+  - action: utter_confidential
 - story: market share example
   steps:
   - intent: ask_marketshare
