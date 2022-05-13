@@ -272,3 +272,95 @@ stories:
   steps:
   - intent: faq_curve
   - action: utter_faq_curve
+
+- story: links check path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: check_links
+  - action: utter_go_links
+  - intent: goodbye
+  - action: action_end_conversation
+
+- story: links check
+  steps:
+  - intent: check_links
+  - action: utter_go_links
+  
+- story: dropdown check
+  steps:
+  - intent: check_dropdown
+  - action: utter_dropdown  
+- story: options check
+  steps:
+  - intent: drop_options
+  - action: utter_options
+
+  
+
+- story: data classifications
+  steps:
+  - intent: data_classifications
+  - action: utter_data_classifications
+
+- story: sas_form_enquire
+  steps:
+  - intent: sas_form_enquire
+  - action: utter_sas_form_enquire
+
+- story: sas_days_extention
+  steps:
+  - intent: sas_days_extention
+  - action: utter_sas_days_extention
+
+- story: sdm_discover_sas_exception_sol_storing_sd_gt180_days_sas
+  steps:
+  - intent: sdm_discover_sas_exception_sol_storing_sd_gt180_days_sas
+  - action: utter_sdm_discover_sas_exception_sol_storing_sd_gt180_days_sas
+
+- story: sdm_discover_sas_exception_executive_approver
+  steps:
+  - intent: sdm_discover_sas_exception_executive_approver
+  - action: utter_sdm_discover_sas_exception_executive_approver
+
+- story: sdm_discover_sas_exception_request_approver_ed
+  steps:
+  - intent: sdm_discover_sas_exception_request_approver_ed
+  - action: utter_sdm_discover_sas_exception_request_approver_ed
+
+- story: sdm_discover_sas_exception_changing_ownership
+  steps:
+  - intent: sdm_discover_sas_exception_changing_ownership
+  - action: utter_sdm_discover_sas_exception_changing_ownership
+
+- story: sdm_discover_sas_exception_delete_quarantined_datasets_usage
+  steps:
+  - intent: sdm_discover_sas_exception_delete_quarantined_datasets_usage
+  - action: utter_sdm_discover_sas_exception_delete_quarantined_datasets_usage
+
+- story: sdm_discover_sas_exception_deleting_datasets
+  steps:
+  - intent: sdm_discover_sas_exception_deleting_datasets
+  - action: utter_sdm_discover_sas_exception_deleting_datasets
+
+- story: sdm_discover_sas_exception_identifying_owners
+  steps:
+  - intent: sdm_discover_sas_exception_identifying_owners
+  - action: utter_sdm_discover_sas_exception_identifying_owners
+
+- story: sdm_discover_sas_exception_sastoshares
+  steps:
+  - intent: sdm_discover_sas_exception_sastoshares
+  - action: utter_sdm_discover_sas_exception_sastoshares
+
+- story: sdm_discover_sas_exception_vulnerabilities_with_sas
+  steps:
+  - intent: sdm_discover_sas_exception_vulnerabilities_with_sas
+  - action: utter_sdm_discover_sas_exception_vulnerabilities_with_sas
+
+- story: sdm_discover_sas_exception_non_member_sensitive_data
+  steps:
+  - intent: sdm_discover_sas_exception_non_member_sensitive_data
+  - action: utter_sdm_discover_sas_exception_non_member_sensitive_data

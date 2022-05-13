@@ -486,10 +486,309 @@ nlu:
       - why should i quarantine myself?
       - why should most people isolate?
       - will quarantine work?
+
+  
   - intent: ask_dlp
     examples: |
       - dlp
       - what is dlp
+- intent: check_links
+  examples: |
+    - hey do you have any links for me
+    - test links
+    - provide go links
+    - example of any go links
+    - give me go links
+
+- intent: check_dropdown
+  examples: |
+    - hey what are the options
+    - dropdown
+    - provide options
+    - example options
+    
+- intent: drop_options
+  examples: |
+    - [option1](drop_option)
+    - [option2](drop_option)
+    - [option3](drop_option)
+    - [option4](drop_option)
+  
+- intent: data_classifications
+  examples: |
+    - what are the data classifications within usaa.
+    - classifications of data elements within usaa.
+    - can i get more information on the data classifications within usaa.
+    - do you have any information on data classified in usaa.
+    - what are the data classifications available
+    - data classifications?
+    - can you provide information regarding data classifications.
+
+- intent: sas_form_enquire
+  examples: |
+    - If the user has a business justification for storing the data in SAS
+    - Where can I find Sensitive Data Exception Form?
+    - Do we need to fill the form whenever we try to store sensitive data?
+    - Is completion of all fileds necessary in sensitive data exceptoin form?
+    - Where can i find the instructions in order to fulfill my SAS Exception request?
+    - What exactly happens once all levels of approval are complete in SAS Exception request?
+    - Where is the SAS Exception Form located?
+    - Is filling the sensitive data exception form mandatory?
+    - Which form do I need to fill to get SAS Exception?
+    - Which form do I submit to request SAS Library Exception?
+    - I submitted a SAS Exception Request but why am I still receiving emails about sensitive data finding?
+    - What can i find in the risk statement for submitting SAS Exception Request?
+    - Filling form for once is enough or do we need to fill it whenever we store sensitive data?
+    - What is the purpose behind filling sensitive data exception form?
+    - For keeping which data  in SAS we need to fill exception form?
+    - Is there any instructions do we need to follow?
+    - In order to keep my sensitive data in SAS which form i need to fill?
+
+- intent: sas_days_extention
+  examples: |
+    - How long can sensitive data be stored in SAS?
+    - For how many days we can store Sensitive data in SAS?
+    - Is there any specific reason that we can't store data more than 180 days?
+    - How long can we store sensitive data in SAS?
+    - Can we store sensitive data in SAS for more than 180 days?
+    - What is the process to store sensitive data in SAS?
+    - How long can sensitive data be stored in SAS?
+    - Can sensitive data be stored in SAS more than 180 days?
+    - Why do we need to store data in SAS for limited time period?
+    - Are we allowed to store sensitive data in SAS?
+    - Why can't we store sensitive data in SAS for more than 180 days?
+    - Can we store data in SAS more than 180 days?
+    - What are the limitations to store sensitive data in SAS?
+    - How long sensitive data can be stored in SAS?
+    - Why is the storage period for sensitive data limited in SAS?
+    - What is the maximum period for storage of sensitive data in SAS?
+    - What is the timeframe for which sensitive data can be stored in SAS?
+    - Is SAS approved for storing sensitive data?
+    - What are the constraints for Sensitive data storage in SAS?
+    - How is Sensitive data managed in SAS?
+
+- intent: sdm_discover_sas_exception_sol_storing_sd_gt180_days_sas
+  examples: |
+    - If the user has a need to store data for more than 180 days?
+    - How many days we can keep sensitive data using SAS?
+    - Can I follow SAS solution to keep data more than 180 days?
+    - For how many days to keep sensitive data, SAS solution applicable?
+    - Is SAS solution applicable, if  i want to keep my sensitive data more than 180 days?
+    - Is there any approved solution to  keep sensitive data for more than 180 days?
+    - Which solution i have to  follow if my requirement to keep sensitive data for 180  days?
+    - Can i keep sensitive data more than 180 days in sas?
+    - If i follow SAS solution,can i keep sensitive data more than 180 days?
+    - Is there any availability to keep sensitive data more than 180 days?
+    - In order to keep  sensitive data for 180 days what should i do?
+    - For basic requirements how many days can i keep data?
+    - Is there any alternate solution to keep data more than 180 days?
+    - For keeping sensitive data how many solutions we have?
+    - If my requirement to keep sensitive data for more than 180 days, Can i keep it?
+    - How many  days we can keep sensitive data?
+    - Can i use alternate solution to keep sensitive data for 180 days?
+    - Can i keep data for 180 days using SAS?
+    - In order keep data for more than 180 days which solution i have to consider?
+    - How to keep data more than 180 days?
+    - what should be done if i need to store sensitive data in sas for more than 180 days?
+
+- intent: sdm_discover_sas_exception_executive_approver
+  examples: |
+    - Who is the Executive Approver of a Library?
+    - who is the approver for a library in SAS?
+    - who can approve over a library in SAS?
+    - what do you mean by an Executive approver?
+    - who is an executive approver?
+    - Executive approver?
+    - Executive approver for a SAS library?
+    - Identifying the Executive approver.
+    - how do I identify my executive approver?
+    - who is an Executive to the library owner in SAS?
+    - can the owner of the library approve?
+    - who is an Executive approver to library owner in SAS?
+    - can you describe an Executive approver?
+    - can you elaborate on Executive approver?
+    - what do we expect of a Executive approver?
+    - what is the role of an executive approver?
+    - Functionalities of an Executive approver?
+    - could you  help me In understanding the term executive approver?
+    - could you define the term executive approver .
+    - how can you identify an Executive Approver?
+
+- intent: sdm_discover_sas_exception_request_approver_ed
+  examples: |
+    - Who will be the approver for the request submitted for the exception?
+    - Who are the approvers for a request submitted for an exception?
+    - By whom can a request be approved for an exception?
+    - Can a request for exception be approved by Executive Director?
+    - Should we need an ED for the approval of a request submitted for an exception? 
+    - Is it possible for approving a request for an exception by ED?
+    - Can we choose an approver less than ED for approving a request submitted for an exception?
+    - What are the roles of the approvers for a request submitted for an exception?
+    - List of approvers for a request submitted for an exception?
+    - Can we make an approver above ED for approving a request submitted for an exception?
+    - Is it possible to choose an approver less than ED for approving a request submitted for an exception? 
+    - What should be the designation of the approver for a request submitted for an exception?
+    - With whom is the approval done for a request submitted for an exception?
+    - Is there a way of approving a request submitted by an approver less than ED?
+    - Can an approver be less than ED for approving a request submitted for an exception?
+    - Is it necessary for an approver to be above ED for approving a request submitted for an exception?
+    - What kind of approvers are used for approving a request submitted for an exception?
+    - Can we make an approver less an ED for approving a request submitted for an exception?
+    - What is the role of an approver for approving a request submitted for an exception?
+    - Should the role of an approver for approving a request submitted for an exception be above ED?
+
+- intent: sdm_discover_sas_exception_changing_ownership
+  examples: |
+    - How can a user change the ownership of SAS library/table?
+    - Can an user change the ownership of SAS table?
+    - Is there any scope to re-assign the table ownership from one user to another?
+    - Is Foster Parent process currently applicable?
+    - How does an user get to change the ownership of the SAS library?
+    - What is the process behind re-assigning the SAS table ownership from one user to other user?
+    - Is re-assignment of table ownership from one user to the other possible?
+    - Can an user tranfser the ownership of table to the other user?
+    - Can an user gain the ownership of the table/library of other user?
+    - Are there any ways to re-assign the ownership of a table from one user to another?
+    - Is trasferring the table ownership from one user to another possible?
+    - Is table ownership transferrable
+    - How can an user modify/alter the ownership of SAS library/table?
+    - What are the possibilities of re-assigning the table ownership from one user to another user?
+    - Is sharing of table ownership among the users possible?
+    - Will the users have an opportunity to share the SAS table ownerships?
+    - Can SAS table/library ownership be shared between the users?
+    - Is re-assignment of library ownership possible via Foster Parent process?
+    - What are the ways in which an user can re-assign the table ownership to other user?
+
+- intent: sdm_discover_sas_exception_delete_quarantined_datasets_usage
+  examples: |
+    - I can see the quarantined datasets in my ME Library, but when trying to delete them, I get "Unable to delete items" error
+    - What should I replace with DS1, DS2..?
+    - How can I remove my quarantined datasets in my Library?
+    - Is there any command to delete my quarantined datasets?
+    - Can I place datasets names side by side without any delimiter in the command?
+    - Which delimiter should  i use for the separation of different datasets?
+    - Should i consider ? mark in the command  or  can i neglect it?
+    - Should I mention  ME name with names of my datasets?
+    - Which command i need to follow in order to delete quarantined datasets from  my ME Library?
+    - Can I mention more than one dataset to delete in my command?
+    - How to delete quarantined datasets from ME Library?
+    - I want to remove  quarantine datasets from my ME Library for that what should i do?
+    - Where should i mention Library name in command?
+    - Is space is enough as delimiter while mentioning quarantine datasets?
+    - How to replace DS1 DS2...?
+    - Do i need to mention ME name while replacing DS1 DS2..?
+    - I have some unwanted quarantine datasets, How to delete them?
+    - Is ME and Library name are same?
+    - Which command should i use to delete my  quarantine datasets?
+    - How to delete datasets from my ME Library?
+
+- intent: sdm_discover_sas_exception_deleting_datasets
+  examples: |
+    - I received DETECT Findings notification but I can still access my datasets. I wish to delete them, how do I delete the entire dataset?
+    - I am able to access my datasets in sas for which I received DETECT findings can I delete them completely?
+    - can i delete the entire dataset if i get a detect finding?
+    - what command should i use Inorder to delete a data set in SAS if there are any detect findings?
+    - on receiving a detect finding in SAS can I delete the dataset?
+    - can you help me in deleting a dataset in SAS as I have received a detect finding.
+    - I received a detect finding in SAS and want to delete the dataset, could you help?
+    - any guidence on deleting a dataset in SAS that has detect findings on it
+    - I received detect findings for a dataset in sas can i delete the dataset directly?
+    - will it be possible to delete datasets in sas that have detect findings on them?
+    - would a person be able to delete datasets in sas if they receive a detect finding on them?
+    - I received detect notification for datasets in SAS and I wish to delete them.
+    - Any command that helps me delete sas datasets with detect findings?
+    - on receiving a detect notification can i delete the sas datasets?
+    - can SAS datasets be deleted if they receive a detect notification
+    - would it be possible to delete the datasets that received detect notification in SAS from my side?
+    - is there a possible way to delete the datasets thet received detect notification in SAS?
+    - would a user be able to delete the entire un-necessary dataset in order to eleminate sensitive data from SAS?
+
+- intent: sdm_discover_sas_exception_identifying_owners
+  examples: |
+    - how can i find the owner for a dataset in SAS
+    - any idea on how to identify the owner of a dataset in SAS?
+    - can you hlp identify the owner of dataset
+    - is there any command to retrieve owner of the dataset in SAS
+    - do you know of any commands that can identify the owner of the datasets?
+    - is there a way to identify owners of datasets in SAS?
+    - where and how can SAS datasets owners be identified?
+    - is it possible to identify a SAS dataset owner?
+    - could you help in identifying a SAS dataset owner
+    - will i be able to identify SAS dataset owner?
+    - if a user wants to know the owner of a dataset what should they do?
+    - would a user be able to identify a SAS dataset owner?
+    - would it be possible to identify SAS dataset owners?
+    - what if i need to identify the owner of a dataset in SAS, what should i do?
+    - are you aware of any method to identify SAS dataset owner
+    - could you guide in identifying owners of SAS dataset
+    - can you help with any query that could identify SAS datasets owners?
+    - can a user identify ownes of SAS datasets?
+    - will it be possible to identify owners of SAS datasets?
+
+- intent: sdm_discover_sas_exception_sastoshares
+  examples: |
+    - are shared drives an approved solution if data needs to be moved out of SAS?
+    - can shared drives be used if data needs to be moved out of SAS?
+    - are shared drives an approved solution if sensitive data needs to be removed from SAS?
+    - can shared drives be leveraged to store data if SAS is not an approved solution.
+    - If SAS is not an approved solution to store sensitive data can we use shared drives
+    - is shared drive an approved solution as SAS should not store sensitive data
+    - would it be possible to use shared drives for moving data out of SAS
+    - if data needs to be moved out of SAS can Shared drives be used?
+    - can data be transfered to shared drives if SAS is not an Approved solution
+    - could we use Share drives to store sensitive data from SAS?
+    - can Shared drives be used to store sensitive data instead of SAS?
+    - can a team use Shared drives to store sensitive data that is being moved out from SAS
+    - if sensitive data needs to be removed from SAS can shared drives be leveraged?
+    - if SAS is not an approved solution to store sensitive data can shared drives be leveraged
+    - as sensitive data needs to be moved out of sas can shared drive be used in its place?
+    - can shared drives be leveraged to store sensitive data by transferring data from SAS
+    - would transferring sensitive data from SAS to shared drives be an approved solution?
+    - is using shared drives an approved solution if sensitive data cannot be stored in SAS?
+
+- intent: sdm_discover_sas_exception_vulnerabilities_with_sas
+  examples: |
+    - what are specific vulnerabilities with SAS domain that resulted in requirement of not storing sensitive data in SAS for more than 180 days?
+    - are there any specific vulnerabilities that have resulted in requirement of not storing sensitive data in SAS
+    - what are the specific vulnerabilities which have caused the movement of Sensitive data out of SAS
+    - what are the reasons behind the requirement of removing Sensitive data from SAS?
+    - can you share the vulnerabilities within SAS that have caused the removal Sensitive data from it
+    - any specific vulnerabilities that have led to removing sensitive data from SAS
+    - any specific concerns which have led to removal of sensitive data in SAS after 180 days?
+    - are there any specific reasons as to which there is a need to remove sensitive data in SAS beyond 180 days?
+    - are there any specific concerns due to which sensitive data needs to removed from SAS beyond 180 days?
+    - why does SAS only allow a max of 180 days to store sensitive data, any specific reasons behind it?
+    - why does SAS only allow a max of 180 days to store sensitive data, any specific vulnerabilities behind it?
+    - vulnarabilities in SAS that have triggered the removal of sensitive data in SAS?
+    - reasons as to which sensitive data needs to be removed from SAS beyond 180 days
+    - why should we move sensitive data out of SAS after 180 days?
+    - is SAS not robust enough to store sensitive data beyond 180 days?
+    - why SAS shouldn't be used to store sensitive data for more than 180 days?
+    - concerns behind moving sensitive data out of SAS after 180 days
+    - what are the major concerns behind the need to move sensitive data out of SAS beyond 180 days
+    - the necessity to move sensitive data out of SAS beyond 180 days, from where has this arised?
+    - what could be the major reasons behind the movement of sensitive data out of SAS after 180 day time period?
+
+- intent: sdm_discover_sas_exception_non_member_sensitive_data
+  examples: |
+    - When it comes to sensitive data being stored in SAS, can an exception be granted for PII which is not member data (such as employee data)?
+    - can employee data be be granted an exception to store in SAS?
+    - can PII which is not member data be granted an exception to store within SAS?
+    - will it be possible to provide an exception for non member PII data to be stored within SAS?
+    - is there any exception that can be granted that allows to store non member PII data within SAS?
+    - can non member SSN be stored within SAS?
+    - would it be possible to store non member SSN within SAS?
+    - can an exception be granted if the PII data within SAS belongs to the employees and not members?
+    - will it be possible to store employee PII data within SAS?
+    - how will non member PII data be treated in regard to storing sensitive data within SAS?
+    - is it possible to store non member PII data within SAS with an exception?
+    - can an exception be granted if PII data in SAS is non member data?
+    - can non member PII data be stored within SAS as an exception?
+    - will non member PII data allowed to be stored within SAS?
+    - can PII data of employees be stored within SAS with an exception?
+    - what effect would restrictions on storing sensitive data within SAS have on employee PII data?
+    - what effect would restrictions on storing sensitive data within SAS have on non member PII data?
+
   - synonym: high
     examples: |
       - escalated
