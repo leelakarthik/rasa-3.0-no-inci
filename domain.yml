@@ -186,11 +186,7 @@ responses:
 
   utter_pci:
   - text: "PCI means Payment Card Industry. Check out this video for more information." 
-<<<<<<< HEAD
     image: "https://youtube.com/embed/szVmMxWORBc"
-=======
-    video: "https://youtube.com/embed/szVmMxWORBc"
->>>>>>> 96da97c73713ceb032ebac6a7472bb05f2e15aa8
 
   utter_goodbye:
   - text: "Bye"
