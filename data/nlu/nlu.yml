@@ -451,23 +451,6 @@ nlu:
       - example of any go links
       - give me go links
 
-<<<<<<< HEAD
-=======
-  - intent: check_dropdown
-    examples: |
-      - hey what are the options
-      - dropdown
-      - provide options
-      - example options
-      
-  - intent: drop_options
-    examples: |
-      - [option1](drop_option)
-      - [option2](drop_option)
-      - [option3](drop_option)
-      - [option4](drop_option)
->>>>>>> 96da97c73713ceb032ebac6a7472bb05f2e15aa8
-    
   - intent: data_classifications
     examples: |
       - what are the data classifications within usaa.
