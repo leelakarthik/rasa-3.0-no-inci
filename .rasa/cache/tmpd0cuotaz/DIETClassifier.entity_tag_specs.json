@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-act",
+      "2": "I-act",
+      "3": "L-act",
+      "4": "U-act",
+      "5": "B-wiki",
+      "6": "I-wiki",
+      "7": "L-wiki",
+      "8": "U-wiki",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-act": 1,
+      "I-act": 2,
+      "L-act": 3,
+      "U-act": 4,
+      "B-wiki": 5,
+      "I-wiki": 6,
+      "L-wiki": 7,
+      "U-wiki": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]

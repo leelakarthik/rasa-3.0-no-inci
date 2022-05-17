@@ -11,7 +11,7 @@ pipeline:
 - name: DIETClassifier
   model_confidence: softmax
   constrain_similarities: True
-  epochs: 300
+  epochs: 150
   random_seed: 1
 - name: EntitySynonymMapper
 - name: FallbackClassifier
@@ -23,7 +23,7 @@ policies:
 - name: TEDPolicy
   constrain_similarities: True
   max_history: 4
-  epochs: 300
+  epochs: 150
 - name: RulePolicy
   constrain_similarities: True
   core_fallback_threshold: 0.1
